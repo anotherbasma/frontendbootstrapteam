@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleadham.css">
     <style>
+
       .continr{
         width: 60%;
         display: flex;
@@ -45,18 +46,11 @@
         
       }
       #img{
-        padding-left: 88%;
-     top:0px;
-      float:right;
-      position: absolute;
+       
+    
       display:inline-block;
     }
-      #iv{
-            float: right;
-position: relative;
-
-padding-right: 220px;
-      }
+   
 
 img{
 width: 25px;
@@ -76,123 +70,131 @@ color: tomato !important;
 padding: 0px !important;
 opacity: 100%;
 }
+.navleft,.navright{
+  display: inline-block;
+}
+.nleft,.nright{
+  display: inline-block;
+}
   </style>
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="nav1  topbar topbar-dark bg-dark">
-    <div class="nav1left">  <i class="fas fa-headset"></i>
-    <p>Support <span class="phone">(00) 33 169 7720</span></p>
-    <header>
-     <div class=" float-start d-inline" >
-         <img src="images/logo-dark.png" width="142px" alt="">
-     </div>
-     <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-      
-
-     
-<div>
-      <i class="far fa-heart fs-4 float-start d-inline pad"></i>
-     <i class="far fa-user fs-4 float-start d-inline pad"></i>
-        <p class="d-inline float-start textuser d-inline pad"><span >Hello, sign in</span>
-          <br>
-            My Account
-        </p>
-      <div class="dropdown">
-        <button class="btn  dropdown-toggle fs-6" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="fas fa-shopping-cart"></i>
-          My cart
-        </button>
-        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-          <li><a class="dropdown-item" href="#"><img src="img/01.jpg" class="imglist"> Action</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#"><img src="img/02.jpg" class="imglist">Another action</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#"><img src="img/03.jpg" class="imglist">Something else here</a></li>
-          <li><hr class="dropdown-divider"></li>
-        </ul>
-      </div>
-</div>
-    </header>
-
-    
-    </div>
-    <div class="nav1center"> 
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        
-        <div class="carousel-inner">
-          <div class="carousel-item active" >
+    <div class="first  bg-dark text-light">
+      <div class="navleft">
+        <div class="nav1left">  <i class="fas fa-headset"></i>
+          <p>Support <span class="phone">(00) 33 169 7720</span></p>
+        </div>
+        <div class="nav1center"> 
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
             
-            
-             
-              <p class=" px-5">Some representative placeholder content for the first slide.</p>
-           
-          </div>
-          <div class="carousel-item">
-            
-           
-             
-              <p  class=" px-5">Some representative placeholder content for the second slide.</p>
-          
-          </div>
-          <div class="carousel-item">
-            
-            
+            <div class="carousel-inner">
+              <div class="carousel-item active" >
+                
+                
+                 
+                  <p class=" px-5">Some representative placeholder content for the first slide.</p>
+               
+              </div>
+              <div class="carousel-item">
+                
+               
+                 
+                  <p  class=" px-5">Some representative placeholder content for the second slide.</p>
               
-              <p  class=" px-5">Some representative placeholder content for the third slide.</p>
-          
+              </div>
+              <div class="carousel-item">
+                
+                
+                  
+                  <p  class=" px-5">Some representative placeholder content for the third slide.</p>
+              
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+
+      </div>
+      <div class="navright">
+        <div id="iv">
+          <i class="fas fa-map-marker-alt"> </i><span> order tracking</span>
+        </div>
+        <div id="img">
+        <img src="en.png">
+        <div class="dropdown">
+          
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            Eng/$
+          </a>
+        
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <div class="btn-group">
+              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                $usd
+              </button>
+              <ul class="dropdown-menu">
+                <li> EUR</li>
+                <li> EUR</li>
+                <li> EUR</li>
+              </ul>
+            </div>
+            <br>
+            <li ><a style="display: inline;" class="dropdown-item" href="#"><img src="fr.png" width="15px" height="15px"></a> frances </li>
+            <li><a  style="display: inline;"class="dropdown-item" href="#"> <img src="it.png" width="15px" height="15px"></a>italian</li>
+            <li><a style="display: inline;" class="dropdown-item" href="#"> <img src="de.png" width="15px" height="15px"></a>egypt</li>
+          </ul>
+        </div>
+        
+        </div>
       </div>
     </div>
+    <div class="second">
+          <div class="nleft"> 
+                <div class=" float-start d-inline" >
+                  <img src="images/logo-dark.png" width="142px" alt="">
+              </div>
+                <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
 
-    <div class="nav1right">
-
-
-      
-<div id="iv">
-  <i class="fas fa-map-marker-alt"> </i><span> order tracking</span>
-</div>
-<div id="img">
-<img src="en.png">
-<div class="dropdown">
+          </div>
+          <div class="nright">
+           
+                <i class="far fa-heart fs-4 float-start d-inline pad"></i>
+              <i class="far fa-user fs-4 float-start d-inline pad"></i>
+                  <p class="d-inline float-start textuser d-inline pad"><span >Hello, sign in</span>
+                    <br>
+                      My Account
+                  </p>
+                <div class="dropdown">
+                  <button class="btn  dropdown-toggle fs-6" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-shopping-cart"></i>
+                    My cart
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item" href="#"><img src="img/01.jpg" class="imglist"> Action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><img src="img/02.jpg" class="imglist">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><img src="img/03.jpg" class="imglist">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                  </ul>
+                </div>
+        
+          </div>
+    
+    </div>
   
-  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-    Eng/$
-  </a>
-
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <div class="btn-group">
-      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        $usd
-      </button>
-      <ul class="dropdown-menu">
-        <li> EUR</li>
-        <li> EUR</li>
-        <li> EUR</li>
-      </ul>
-    </div>
-    <br>
-    <li ><a style="display: inline;" class="dropdown-item" href="#"><img src="fr.png" width="15px" height="15px"></a> frances </li>
-    <li><a  style="display: inline;"class="dropdown-item" href="#"> <img src="it.png" width="15px" height="15px"></a>italian</li>
-    <li><a style="display: inline;" class="dropdown-item" href="#"> <img src="de.png" width="15px" height="15px"></a>egypt</li>
-  </ul>
-</div>
-
-</div>
-    </div>
-    </div>
   
     <script src="js/bootstrap.bundle.min.js"></script>
    
