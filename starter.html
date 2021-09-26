@@ -23,6 +23,60 @@
         box-sizing: border-box;
       }
     </style>
+     <style>
+      #navbar{
+
+        width: 100%;
+        height: 30px;
+        background-color:rgb(53, 45, 45);
+     
+       
+        
+      }
+      .fas{
+        color: crimson;
+      }
+      #navbar span{
+        color:lightgray;
+
+      }
+      #navbar span:hover{
+        color: white;
+        
+      }
+      #img{
+        padding-left: 88%;
+     top:0px;
+      float:right;
+      position: absolute;
+      display:inline-block;
+    }
+      #iv{
+            float: right;
+position: relative;
+
+padding-right: 220px;
+      }
+
+img{
+width: 25px;
+height: 25px;
+}
+.dropdown{
+height: 20px !important;
+display: inline !important;
+float: right;
+top: 0px;
+size: 10px;
+}
+li:hover{
+color: tomato !important;
+}
+.btn{
+padding: 0px !important;
+opacity: 100%;
+}
+  </style>
     <title>Hello, world!</title>
   </head>
   <body>
@@ -103,7 +157,41 @@
       </div>
     </div>
 
-    <div class="nav1right"></div>
+    <div class="nav1right">
+
+
+      
+<div id="iv">
+  <i class="fas fa-map-marker-alt"> </i><span> order tracking</span>
+</div>
+<div id="img">
+<img src="en.png">
+<div class="dropdown">
+  
+  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Eng/$
+  </a>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <div class="btn-group">
+      <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        $usd
+      </button>
+      <ul class="dropdown-menu">
+        <li> EUR</li>
+        <li> EUR</li>
+        <li> EUR</li>
+      </ul>
+    </div>
+    <br>
+    <li ><a style="display: inline;" class="dropdown-item" href="#"><img src="fr.png" width="15px" height="15px"></a> frances </li>
+    <li><a  style="display: inline;"class="dropdown-item" href="#"> <img src="it.png" width="15px" height="15px"></a>italian</li>
+    <li><a style="display: inline;" class="dropdown-item" href="#"> <img src="de.png" width="15px" height="15px"></a>egypt</li>
+  </ul>
+</div>
+
+</div>
+    </div>
     </div>
   
     <script src="js/bootstrap.bundle.min.js"></script>
