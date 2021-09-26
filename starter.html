@@ -10,8 +10,18 @@
     <link rel="stylesheet" href="css/all.min.css">
     
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleadham.css">
     <style>
-
+      .continr{
+        width: 60%;
+        display: flex;
+        align-items: center;
+      }
+      .input-group{
+        display: flex !important;
+        width: 100% !important;
+        box-sizing: border-box;
+      }
     </style>
     <title>Hello, world!</title>
   </head>
@@ -19,6 +29,41 @@
     <div class="nav1  topbar topbar-dark bg-dark">
     <div class="nav1left">  <i class="fas fa-headset"></i>
     <p>Support <span class="phone">(00) 33 169 7720</span></p>
+    <header>
+     <div class="continr" >
+       <a class="images" href="#">
+         <img src="images/logo-dark.png" width="142px" alt="">
+       </a>
+       <div class="input-group d-none d-lg-flex mx-4">
+        <input class="form-control rounded-end pe-5" type="text" placeholder="Search for products" > <i class="fas fa-search position-absolute top-50 end-0 translate-middle-y text-muted fs-base me-3"></i>
+        
+      </div>
+
+     </div>
+<div>
+      <i class="far fa-heart fs-4 float-start d-inline pad"></i>
+     <i class="far fa-user fs-4 float-start d-inline pad"></i>
+        <p class="d-inline float-start textuser d-inline pad"><span >Hello, sign in</span>
+          <br>
+            My Account
+        </p>
+      <div class="dropdown">
+        <button class="btn  dropdown-toggle fs-6" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-shopping-cart"></i>
+          My cart
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+          <li><a class="dropdown-item" href="#"><img src="img/01.jpg" class="imglist"> Action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#"><img src="img/02.jpg" class="imglist">Another action</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#"><img src="img/03.jpg" class="imglist">Something else here</a></li>
+          <li><hr class="dropdown-divider"></li>
+        </ul>
+      </div>
+</div>
+    </header>
+
     
     </div>
     <div class="nav1center"> 
